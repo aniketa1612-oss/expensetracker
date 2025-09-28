@@ -516,7 +516,7 @@
             const income = document.getElementById('income').value || '0';
             const category = document.getElementById('category').value;
             
-            const apiUrl = `https://03pcrj47y9.execute-api.us-east-1.amazonaws.com/Dev/updateExpenses?date=${encodeURIComponent(date)}&item=${encodeURIComponent(item)}&price=${encodeURIComponent(price)}&income=${encodeURIComponent(income)}&category=${encodeURIComponent(category)}`;
+            const apiUrl = `https://39asmg53t6.execute-api.ap-south-1.amazonaws.com/Dev/updateExpenses?date=${encodeURIComponent(date)}&item=${encodeURIComponent(item)}&price=${encodeURIComponent(price)}&income=${encodeURIComponent(income)}&category=${encodeURIComponent(category)}`;
             
             try {
                 const response = await fetch(apiUrl, { method: 'POST' });
