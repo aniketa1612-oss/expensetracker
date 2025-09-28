@@ -5,8 +5,8 @@ from datetime import datetime
 
 # Initialize DynamoDB client
 dynamodb = boto3.resource("dynamodb")
-table = dynamodb.Table("newSpendingData")
-budget_table = dynamodb.Table("budget")
+table = dynamodb.Table("SpendingTrackingTable")
+budget_table = dynamodb.Table("budgetTrackingTable")
 
 def lambda_handler(event, context):
     # Scan DynamoDB table to get all records
@@ -122,4 +122,5 @@ def lambda_handler(event, context):
             "daily_spending_rate": daily_spending_rate,
             "total_spent": total_spent
         })
+
     }
