@@ -100,11 +100,12 @@ def lambda_handler(event, context):
         return {
             "statusCode": 200,
             "headers": {
-                "Access-Control-Allow-Origin": "*",
-                "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
-                "Access-Control-Allow-Headers": "*",
-                "Content-Type": "application/json"
-            },
+    "Access-Control-Allow-Origin": "https://main.d1lo0rjulorvdo.amplifyapp.com",
+    "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
+    "Access-Control-Allow-Headers": "Content-Type",
+    "Content-Type": "application/json"
+}
+
             "body": json.dumps(response_body, default=decimal_default)
         }
 
